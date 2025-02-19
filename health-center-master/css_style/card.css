@@ -14,20 +14,14 @@
 }
 
 .custom-card .row {
-    align-items: center; /* Align content vertically */
+    align-items: center; 
 }
-/* 
-.custom-card img {
-    height: 100%;
-    object-fit: cover; 
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
-} */
+
 
 .custom-card img {
-    height: 197px; /* Makes the image fill the height of its parent */
-    width: 200px; /* Ensures the image does not overflow */
-    object-fit: fill; /* Keeps aspect ratio and prevents stretching */
+    height: 197px; 
+    width: 200px;
+    object-fit: fill; 
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
 }
@@ -60,22 +54,38 @@
     padding: 15px;
     background-color: #ffff;
     transition: transform 0.3s ease-in-out;
-    min-width: 350px;
-    min-height: 150px;
+    height: 80px;
     margin: 10px;
-    max-width: 360px;
+    width: auto;
+    transition: height 0.3s ease-in-out;
+    text-overflow: hidden;
+    overflow: hidden;
     
 }
 
 .new-card:hover {
     transform: scale(1.02);
+    height:450px ;
 }
 
 .title {
     font-weight: bold;
     letter-spacing: 1px;
     font-size: 16px;
+    margin-top: -3px;
 }
+
+.experience {
+    font-size: 14px;
+    font-weight: bold;
+    color: #333; 
+    margin: 5px 0;
+}
+
+.experience span {
+    color: #007bff;
+}
+
 
 .description {
     padding-top: 6px;
@@ -88,7 +98,7 @@
     width: 30px;
     height: 3px;
     background-color: #002F5F; /* Dark blue underline */
-    /* margin: 3px 0; */
+    margin: 3px 0;
 }
 
 .vacancy-btn {
