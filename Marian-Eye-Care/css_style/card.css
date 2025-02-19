@@ -1,6 +1,6 @@
 .custom-card {
     max-width: 540px;
-    border: 1px solid #6c757d; /* Blue border */
+    border: 1px solid #6c757d; 
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -9,8 +9,8 @@
 }
 
 .custom-card:hover {
-    transform: scale(1.02);
-    border: 2px solid #aaff00;
+    transform: scale(1.05);
+    /* border: 2px solid #aaff00; */
 }
 
 .custom-card .row {
@@ -19,15 +19,28 @@
 
 
 .custom-card img {
-    height: 197px; 
-    width: 200px;
-    object-fit: fill; 
+    min-height: 197px; 
+    width: 100%;
+    object-fit: cover; 
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
 }
 
+@media (max-width: 373px) {
+    .custom-card img {
+        width: 250px;  
+    }
+}
+
+@media (min-width: 374px) {
+    .custom-card img {
+        width: 130%;  
+        border-bottom-left-radius: 0px;
+    }
+}
+
 .custom-card .card-body {
-    background-color: #f8f9fa; /* Light gray background */
+    background-color: #f8f9fa;  /* Light gray background */
     padding: 20px;
 }
 
