@@ -66,6 +66,12 @@
 .new-card:hover {
     transform: scale(1.02);
     height:450px ;
+    text-overflow: scroll;
+    overflow: scroll;
+}
+
+.new-card::-webkit-scrollbar {
+    display: none;
 }
 
 .title {
@@ -98,7 +104,8 @@
     width: 30px;
     height: 3px;
     background-color: #002F5F; /* Dark blue underline */
-    margin: 3px 0;
+    margin-top: -10px;
+    margin-bottom: 10px; 
 }
 
 .vacancy-btn {
@@ -157,6 +164,7 @@
 .gallery-item:hover img {
     filter: brightness(50%);
 }
+
 .gallery-item:hover .overlay {
     opacity: 1;
     background: rgba(0, 0, 0, 0.5);
