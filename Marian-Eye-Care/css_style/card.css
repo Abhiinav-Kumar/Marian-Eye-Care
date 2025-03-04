@@ -81,6 +81,7 @@
     height:450px ;
     text-overflow: scroll;
     overflow: scroll;
+    
 }
 
 .new-card::-webkit-scrollbar {
