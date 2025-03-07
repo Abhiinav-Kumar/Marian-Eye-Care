@@ -189,12 +189,7 @@
     position: relative;
 }
 
-/* Heading */
-.testimonial-heading {
-    margin-bottom: 20px;
-    font-size: 24px;
-    color: #333;
-}
+
 
 /* Testimonial Carousel */
 .testimonial-carousel {
@@ -218,10 +213,11 @@
 }
 
 /* Author Name */
-.testimonial-slide h6 {
+.testimonial-slide h4 {
     margin-top: 10px;
     font-weight: bold;
-    color: #007bff;
+    font-size: 20px;
+    /* color: #007bff; */
 }
 
 .testimonial-slide p {
