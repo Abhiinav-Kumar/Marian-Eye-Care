@@ -87,7 +87,8 @@
 }
 
 .vacancy-btn {
-    background-color: #a5c422;
+    /* background-color: #a5c422; */
+    background-color: #002F5F; /* Dark blue */
     color: white;
     border: none;
     padding: 8px 12px;
