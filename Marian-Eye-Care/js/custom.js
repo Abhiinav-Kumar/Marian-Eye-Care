@@ -43,3 +43,57 @@
     new WOW({ mobile: false }).init();
 
 })(jQuery);
+
+
+
+//  testimonial slider
+
+document.addEventListener("DOMContentLoaded", function () {
+  let currentIndex = 0;
+  const slides = document.querySelectorAll(".testimonial-slide");
+  const totalSlides = slides.length;
+
+  function showSlide(index) {
+      slides.forEach((slide, i) => {
+          slide.classList.toggle("active", i === index);
+      });
+  }
+
+  setInterval(() => {
+      currentIndex = (currentIndex + 1) % totalSlides;
+      showSlide(currentIndex);
+  }, 5000); // Change slide every 5 seconds
+
+  showSlide(currentIndex); // Show the first slide on load
+});
+
+
+// document.addEventListener("DOMContentLoaded", function () {
+//   let currentIndex = 0;
+//   const slides = document.querySelectorAll(".testimonial-slide");
+//   const totalSlides = slides.length;
+
+//   function showSlide(index) {
+//       slides.forEach((slide, i) => {
+//           slide.classList.toggle("active", i === index);
+//       });
+//   }
+
+//   document.querySelector(".next-btn").addEventListener("click", function () {
+//       currentIndex = (currentIndex + 1) % totalSlides;
+//       showSlide(currentIndex);
+//   });
+
+//   document.querySelector(".prev-btn").addEventListener("click", function () {
+//       currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+//       showSlide(currentIndex);
+//   });
+
+//   // Auto-slide every 5 seconds
+//   setInterval(() => {
+//       currentIndex = (currentIndex + 1) % totalSlides;
+//       showSlide(currentIndex);
+//   }, 5000);
+
+//   showSlide(currentIndex); // Show the first slide on load
+// });
