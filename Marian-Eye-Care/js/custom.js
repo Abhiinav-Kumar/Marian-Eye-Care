@@ -69,6 +69,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // inspect disable 
 
-document.addEventListener("contextmenu", function (e) {
-  e.preventDefault();
-});
+// document.addEventListener("contextmenu", function (e) {
+//   e.preventDefault();
+// });

@@ -462,11 +462,14 @@ http://www.tooplate.com/view/2098-health
   }
 
   .slider .item-first {
-    background-image: url(../pictures/high\ res.jpg);
+    background-image: url(../pictures/eye_care_slider1.jpg);
+    background-position: 0px -130px;
   }
 
   .slider .item-second {
     background-image: url(../pictures/eye_care_slider2.jpg);
+    background-position: 0px -150px;
+
   }
 
   .slider .item-third {
@@ -475,6 +478,8 @@ http://www.tooplate.com/view/2098-health
 
   .slider .bgimage-s{
     background-image: url(../pictures/eye_services.jpg);
+    background-position: 0px -85px;
+
   }
 
   .slider .bgimage-c{
@@ -483,6 +488,7 @@ http://www.tooplate.com/view/2098-health
 
   .slider .bgimage-f{
     background-image: url(../pictures/eye_facilities.jpg);
+    background-position: 0px -4px;
   }
 
   /*---------------------------------------
