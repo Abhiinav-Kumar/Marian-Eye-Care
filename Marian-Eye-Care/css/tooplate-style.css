@@ -486,6 +486,10 @@ http://www.tooplate.com/view/2098-health
     background-image: url(../pictures/eye_career.jpg);
   }
 
+  .slider .bgimage-a{
+    background-image: url(../pictures/eye_demo.jpg);
+  }
+
   .slider .bgimage-f{
     background-image: url(../pictures/eye_facilities.jpg);
     background-position: 0px -4px;

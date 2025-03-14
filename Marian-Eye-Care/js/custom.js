@@ -67,8 +67,52 @@ document.addEventListener("DOMContentLoaded", function () {
   showSlide(currentIndex); // Show the first slide on load
 });
 
-// inspect disable 
 
-// document.addEventListener("contextmenu", function (e) {
-//   e.preventDefault();
-// });
+// image about slider
+
+document.addEventListener("DOMContentLoaded", () => {
+  const slidesContainer = document.querySelector(".about-slides");
+  const slides = document.querySelectorAll(".about-slides img");
+  const totalSlides = slides.length;
+
+  let currentIndex = 0;
+
+  // Clone first & last slides for the seamless effect
+  const firstClone = slides[0].cloneNode(true);
+  const lastClone = slides[totalSlides - 1].cloneNode(true);
+
+  slidesContainer.appendChild(firstClone);
+  slidesContainer.insertBefore(lastClone, slides[0]);
+
+  const allSlides = document.querySelectorAll(".about-slides img");
+  const totalSlidesWithClones = allSlides.length;
+
+  // Set initial position (fake the first clone)
+  slidesContainer.style.transform = `translateX(-100%)`;
+
+  function moveSlide(direction) {
+      currentIndex += direction;
+
+      slidesContainer.style.transition = "transform 0.5s ease-in-out";
+      slidesContainer.style.transform = `translateX(${-100 * (currentIndex + 1)}%)`;
+
+      // After transition, reset position instantly for seamless effect
+      slidesContainer.addEventListener("transitionend", () => {
+          if (currentIndex === totalSlides) {
+              slidesContainer.style.transition = "none";
+              currentIndex = 0;
+              slidesContainer.style.transform = `translateX(-100%)`;
+          }
+
+          if (currentIndex === -1) {
+              slidesContainer.style.transition = "none";
+              currentIndex = totalSlides - 1;
+              slidesContainer.style.transform = `translateX(${-100 * totalSlides}%`;
+          }
+      });
+  }
+
+  // Button event listeners
+  document.querySelector(".prev").addEventListener("click", () => moveSlide(-1));
+  document.querySelector(".next").addEventListener("click", () => moveSlide(1));
+});
