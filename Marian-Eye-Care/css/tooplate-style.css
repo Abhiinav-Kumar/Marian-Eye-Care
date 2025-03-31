@@ -500,8 +500,11 @@ http://www.tooplate.com/view/2098-health
   -----------------------------------------*/
 
   #about {
-    background: url('../images/about-bg.jpg') no-repeat top center;
-    background-size: cover;
+    /* margin-left: 800px;
+    height: 600px; */
+    /* background: url('https://bharathhospital.co.in/uploads/doctors/0807211625732935495034358.jpg') no-repeat top center ; */
+    background: url('../images/about-bg.jpg') no-repeat top center ;
+    background-size: fit;
     padding-top: 150px;
     padding-bottom: 150px;
   }
