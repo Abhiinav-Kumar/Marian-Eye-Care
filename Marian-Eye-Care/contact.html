@@ -128,7 +128,7 @@
                                   <input type="email" class="form-control" id="#" name="user_email" placeholder="Email Address" required>
 
                                   <label for="#">Phone Number</label>
-                                  <input type="tel" class="form-control" id="phone" name="user_phone" placeholder="Phone" >
+                                  <input type="tel" class="form-control" id="phone" name="user_phone" placeholder="Phone" required>
 
                                   <label for="Message">Message</label>
                                   <textarea class="form-control" rows="5" id="message" name="message" placeholder="Message" required></textarea>
@@ -275,6 +275,7 @@
     emailjs.sendForm("service_6mnuj5q", "template_8fvmm7k", this)
       .then(function() {
         alert("Message sent successfully!");
+        document.getElementById("appointment").reset();
       }, function(error) {
         alert("Failed to send message: " + JSON.stringify(error));
       });
