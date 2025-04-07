@@ -41,12 +41,16 @@
 }
 
 .custom-card .card-body {
-    background-color:  #f9f9f9;  /* Light gray background */
-    padding: 20px;
+    /* background-color: yellow; */
+    background-color:  #f9f9f9;  
+    padding: 1px;
+    padding-left: 12px;
+    height: 197px; /* Set a fixed height for the card body */
+    overflow: hidden; /* Hide overflow content */
 }
 
 .custom-card .card-title {
-    color: #007bff;
+    color: #000000;
     font-weight: bold;
 }
 
