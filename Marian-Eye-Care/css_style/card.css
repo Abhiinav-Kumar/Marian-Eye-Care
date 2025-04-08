@@ -1,3 +1,12 @@
+/* LOGO  */
+
+.logo-img{
+    margin-top: -6px;
+     width:30px ;
+     height:30px;
+     margin-right: 5px;
+}
+
 .custom-card {
     max-width: 540px;
     /* border: 1px solid #6c757d;  */
@@ -31,6 +40,7 @@
     .custom-card img {
         width: 250px;  
     }
+    
 }
 
 @media (min-width: 374px) {
@@ -38,6 +48,8 @@
         width: 130%;  
         border-bottom-left-radius: 0px;
     }
+
+    
 }
 
 .custom-card .card-body {
@@ -153,6 +165,7 @@
     max-height: 350px;
     display: block;
     transition: 0.3s ease-in-out;
+    background-size: cover;
 }
 .overlay {
     position: absolute;
@@ -365,16 +378,24 @@
 .about-slides img {
     width: 100%;
     height: 500px;
-    object-fit: fill;
+    object-fit: cover;
     flex-shrink: 0;
+}
+
+@media only screen and (max-width: 768px) {
+    .about-slides img {
+        width: 100%;
+        height: 500px;
+        object-fit: contain;
+        flex-shrink: 0;
+    }
 }
 
 .nav-button {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    /* background: rgba(0, 0, 0, 0.5); */
-    background: transparent;
+    background: rgba(0, 0, 0, 0.2);
     color: #fff;
     border: none;
     padding: 10px;

@@ -501,8 +501,9 @@ http://www.tooplate.com/view/2098-health
 
   #about {
     max-height: 650px;
-    background: url('../pictures/about_home.jpg') no-repeat top center ;
-    background-position: 10px -250px;
+    background: url('../pictures/about_home1.jpg') no-repeat top center ;
+    /* background-position: 10px -250px; */
+    background-position: 10px -350px;
     background-size: cover;
     padding-top: 150px;
     padding-bottom: 130px;
@@ -1118,6 +1119,7 @@ http://www.tooplate.com/view/2098-health
       font-size: 11px;
       letter-spacing: 1px;
     }
+    
 
   }
 
