@@ -543,6 +543,11 @@ http://www.tooplate.com/view/2098-health
     cursor: pointer;
   }
 
+  .team-thumb-H{
+    margin-top: 8px;
+    min-height: 620PX;
+  }
+
   .team-info {
     padding: 20px 30px 0 30px;
   }
