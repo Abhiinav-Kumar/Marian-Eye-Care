@@ -411,3 +411,12 @@
 .nav-button:hover {
     background: rgba(0, 0, 0, 0.8);
 }
+
+
+/* readmore diseases image */
+
+.diseases-img{
+    width: 555px;
+    height: 450px;
+    object-fit: cover;
+}
