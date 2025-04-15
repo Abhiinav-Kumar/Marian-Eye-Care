@@ -420,3 +420,10 @@
     height: 450px;
     object-fit: cover;
 }
+
+
+/* services facilities image ratio  */
+
+.img-ratio{
+    aspect-ratio: 1/1;
+}
