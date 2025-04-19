@@ -427,3 +427,53 @@
 .img-ratio{
     aspect-ratio: 1/1;
 }
+
+
+/*service dropdown  */
+
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    min-width: 200px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    z-index: 60;
+    list-style: none;
+  
+    
+  }
+  
+  .dropdown-content li a {
+    padding: 10px;
+    color: #509964;
+    display: block;
+    width: auto;
+    text-decoration: none;
+    margin-left: -40px;
+    
+  
+  }
+  
+  .dropdown-content li a:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+
+/* Mobile: dropdown hidden by default, shown via JS */
+@media (max-width: 767px) {
+    .dropdown-content {
+       
+      position: static; /* Optional: stack inside navbar on mobile */
+    }
+  }

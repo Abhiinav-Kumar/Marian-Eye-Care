@@ -88,10 +88,24 @@
                <!-- MENU LINKS -->
                <div class="collapse navbar-collapse">
                     <ul class="nav navbar-nav navbar-right">
-                         <li><a href="index.html" class="smoothScroll,">Home</a></li>
+                         <li><a href="index.html" class="smoothScroll">Home</a></li>
                          <li><a href="about.html" class="smoothScroll">About Us</a></li>
                          <li><a href="facilities.html" class="smoothScroll">Facilities</a></li>
-                         <li><a style="color: #509964;" href="services.html" class="smoothScroll">Services</a></li>
+                         <!-- <li><a style="color: #509964;" href="services.html" class="smoothScroll">Services</a></li> -->
+
+                         <li class="dropdown">
+                              <a style="color: #509964;" href="javascript:void(0)" class="smoothScroll service-nav">Services <i class="fa fa-light fa-caret-down"></i></a>
+                              <ul class="dropdown-content">
+                                <li><a href="#cataract">Cataract & Glaucoma</a></li>
+                                <li><a href="#oct">OCT Scan for All Retinal Diseases</a></li>
+                                <li><a href="#glaucoma">Glaucoma Evaluation</a></li>
+                                <li><a href="#yag">YAG Laser Treatment</a></li>
+                                <li><a href="#green">Green Laser Treatment</a></li>
+                                <li><a href="#intravitreal">Intravitreal Injections</a></li>
+                              </ul>
+                         </li>
+                            
+
                          <li><a href="career.html" class="smoothScroll">Career</a></li>
                          <li><a href="gallery.html" class="smoothScroll">Gallery</a></li>
                          <li><a href="contact.html" class="smoothScroll">Contact</a></li>
@@ -140,7 +154,27 @@
 
                     <div class="clearfix"></div>
 
-                    <div class="col-md-6 col-sm-6">
+                    <div class="col-md-6 col-sm-6" id="cataract">
+                         <div class="team-thumb  team-thumb-H wow fadeInUp" data-wow-delay="0.2s">
+                              <img src="pictures/services/Cataract-Eye-Surgery.png"  class="img-responsive"  alt="Cataract & Glaucoma">
+
+                                   <div class="team-info" style="padding-bottom: 13px;">
+                                        <h3>Cataract & Glaucoma Screening and Diagnosis</h3><br>
+                                        <p>Comprehensive eye exams are essential for the early detection and management of Cataract and Glaucoma. Our advanced diagnostic tools help in accurate evaluation and timely treatment to preserve vision.</p>
+                                        <div class="team-contact-info" style="margin-top: 20px;">
+                                            <p>• Slit Lamp Examination</p>
+                                            <p>• Tonometry (Eye Pressure Test)</p>
+                                            <p>• Visual Field Testing</p>
+                                            <p>• Fundus Photography</p>
+                                            <p>• Optical Coherence Tomography (OCT) for Optic Nerve Analysis</p>
+                                        </div>                                        
+                                   </div>
+                                   
+
+                         </div>
+                    </div>
+
+                    <div class="col-md-6 col-sm-6" id="oct">
                          <div class="team-thumb  team-thumb-H wow fadeInUp" data-wow-delay="0.2s">
                               <img src="pictures/services/OCT Scan for All Retinal Diseases.png" class="img-responsive" alt="">
 
@@ -160,7 +194,9 @@
                          </div>
                     </div>
 
-                    <div class="col-md-6 col-sm-6">
+                    <div class="clearfix"></div>
+
+                    <div class="col-md-6 col-sm-6" id="glaucoma">
                          <div class="team-thumb  team-thumb-H wow fadeInUp" data-wow-delay="0.4s">
                               <img src="pictures/services/Glaucoma Evaluation.png" class="img-responsive" alt="">
 
@@ -178,7 +214,7 @@
                          </div>
                     </div>
 
-                    <div class="col-md-6 col-sm-6">
+                    <div class="col-md-6 col-sm-6" id="yag">
                          <div class="team-thumb  team-thumb-H wow fadeInUp" data-wow-delay="0.6s">
                               <img src="pictures/services/YAG Laser Treatment.png" class="img-responsive" alt="">
 
@@ -195,7 +231,9 @@
                          </div>
                     </div>
 
-                    <div class="col-md-6 col-sm-6">
+                    <div class="clearfix"></div>
+
+                    <div class="col-md-6 col-sm-6" id="green">
                          <div class="team-thumb  team-thumb-H wow fadeInUp" data-wow-delay="0.6s">
                               <img src="pictures/services/Green Laser Treatment.png" class="img-responsive" alt="">
 
@@ -212,10 +250,8 @@
 
                          </div>
                     </div>
-                    <!-- Add clearfix to start new row for last item -->
-                    <div class="clearfix "></div>
-
-                    <div class="col-md-6 col-sm-6" >
+                    
+                    <div class="col-md-6 col-sm-6" id="intravitreal" >
                          <div class="team-thumb  team-thumb-H wow fadeInUp" data-wow-delay="0.6s">
                               <img src="pictures/services/Intravitreal Injections.png" class="img-responsive" alt="">
 
@@ -320,7 +356,7 @@
      <script src="js/smoothscroll.js"></script>
      <script src="js/owl.carousel.min.js"></script>
      <script src="js/custom.js"></script>
-
+     
      <!-- bootstrap 
      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script> -->
 
