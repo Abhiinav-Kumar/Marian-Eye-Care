@@ -197,6 +197,48 @@
     background: rgba(0, 0, 0, 0.5);
 }
 
+/* Gallery video */
+
+/* Container for all videos */
+.video-container {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column; /* Stacks videos vertically */
+    gap: 15px; /* Spacing between rows */
+}
+
+/* Each video item */
+.gallery-video {
+    position: relative;
+    flex: 1 1 100%; /* Makes each video take up 100% width */
+    margin-bottom: 15px; /* Spacing between rows */
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Video styling */
+.gallery-video video {
+    width: 100%;
+    height: 550px;
+    border-radius: 10px;
+    
+}
+/* Responsive styling */
+@media (max-width: 768px) {
+    .gallery-video {
+        flex: 1 1 100%; /* One video per row on smaller screens */
+    }
+
+    .gallery-video video {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+        
+    }
+}
+
+
+
 
 
 
@@ -496,3 +538,8 @@
   }
 
   }
+
+
+/* .simg{
+    max-height: 450px;
+} */
