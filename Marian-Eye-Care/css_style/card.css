@@ -519,7 +519,6 @@
     -webkit-transition: all ease-in-out 0.4s;
     transition: all ease-in-out 0.4s;
     border: none;
-    margin-top: 15px;
     background-color: transparent;
   }
 
@@ -533,7 +532,7 @@
     
   .service-dropdown-btn{
     margin-top: 5px;
-    margin-left: 10px;
+    margin-left: -10px;
     margin-bottom: 6px;
   }
 
