@@ -471,12 +471,16 @@
 }
 
 
+
+
 /*service dropdown  */
 
 
 .dropdown {
     position: relative;
     display: inline-block;
+    /* margin-top: 15px; */
+    
   }
   
 
@@ -525,16 +529,22 @@
 
 /* Mobile: dropdown hidden by default, shown via JS */
 @media (max-width: 767px) {
+
+    .dropdown{
+        margin-top:0px;
+    }
+
+
     .dropdown-content {
       position: static; /* Optional: stack inside navbar on mobile */
     }
 
     
-  .service-dropdown-btn{
+  /* .service-dropdown-btn{
     margin-top: 5px;
-    margin-left: -10px;
+    margin-left: 10px;
     margin-bottom: 6px;
-  }
+  } */
 
   }
 
