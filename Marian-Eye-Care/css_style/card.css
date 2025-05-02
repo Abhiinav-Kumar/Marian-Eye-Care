@@ -241,17 +241,13 @@
 }
 
 
-
-
-
-
 /* Testimonial Container */
 .testimonial-container {
     width: auto;
     margin: auto;
     text-align: center;
     background: #f9f9f9;
-    
+    margin-bottom: 15px;
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0px 0x 1px rgba(0, 0, 0, 0.1);
@@ -492,9 +488,10 @@
     position: absolute;
     background-color: rgb(255, 255, 255);
     min-width: 200px;
-    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.9);
     z-index: 60;
     list-style: none;
+    padding-bottom: 10px;
   
     
   }
