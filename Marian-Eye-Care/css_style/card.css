@@ -546,6 +546,13 @@
     margin-top: 53px;
 }  
 
+@media (max-width: 768px) {
+    .simg{
+        display: none;
+    }
+}
+
+
 .simgd{
     border-radius: 100%;
     width: 100px;
