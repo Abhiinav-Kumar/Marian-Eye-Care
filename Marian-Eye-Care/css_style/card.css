@@ -38,7 +38,9 @@
 
 @media (max-width: 373px) {
     .custom-card img {
-        width: 250px;  
+        /* width: 250px;   */
+        border-bottom: 0px;
+        
     }
     
     

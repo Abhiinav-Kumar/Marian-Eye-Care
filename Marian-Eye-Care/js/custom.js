@@ -116,3 +116,27 @@ document.addEventListener("DOMContentLoaded", () => {
   document.querySelector(".prev").addEventListener("click", () => moveSlide(-1));
   document.querySelector(".next").addEventListener("click", () => moveSlide(1));
 });
+
+
+
+
+
+
+  document.addEventListener("DOMContentLoaded", function () {
+    const isMobile = window.innerWidth <= 768; // adjust based on your mobile breakpoint
+    const currentPath = window.location.pathname.split("/").pop(); // get filename
+    const serviceLink = document.querySelector('.a-disable');
+
+    if (isMobile && currentPath === "services.html") {
+      // Disable button inside <a>
+      serviceLink.disabled = true;
+      serviceLink.style.pointerEvents = "none";
+      serviceLink.style.cursor = "default";
+
+      // Optional: prevent default on <a> click too
+      serviceLink.closest("a").addEventListener("click", function (e) {
+        e.preventDefault();
+      });
+    }
+  });
+
