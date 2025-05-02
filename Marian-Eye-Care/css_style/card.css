@@ -41,6 +41,7 @@
         width: 250px;  
     }
     
+    
 }
 
 @media (min-width: 374px) {
@@ -534,17 +535,21 @@
         margin-top:0px;
     }
 
+    .brand-name{
+        font-size: 14px;
+    }
+
 
     .dropdown-content {
       position: static; /* Optional: stack inside navbar on mobile */
     }
 
+
     
-  /* .service-dropdown-btn{
-    margin-top: 5px;
-    margin-left: 10px;
-    margin-bottom: 6px;
-  } */
+  .service-dropdown-btn{
+    margin-left: -10px;
+
+  }
 
   }
 
