@@ -261,7 +261,8 @@
 .testimonial-carousel {
     position: relative;
     overflow: hidden;
-    height: 120px;
+    height: auto;
+    
 }
 
 /* Individual Slides */
