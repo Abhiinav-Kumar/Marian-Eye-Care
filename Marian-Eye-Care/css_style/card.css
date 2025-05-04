@@ -583,4 +583,23 @@
     margin-top: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  /* Shadow effect */
   }
+
+
+
+  /* facilites row  */
+.equal-height {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.equal-height > div {
+    display: flex;
+    flex-direction: column;
+}
+.team-thumb {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
   
